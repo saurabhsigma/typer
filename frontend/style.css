@@ -40,3 +40,44 @@ button{
     padding: 10px;
 
 }
+
+#input-box{
+    background-color: rgb(39, 38, 38);
+    border: 1px solid rgb(61, 61, 61);
+    margin: 20px;
+    outline: none;
+    /* margin-right: 40px; */
+    margin-top: 30px;
+    width: 97.2%;
+    height: 300px;
+    /* text-align:start; */
+    font-size: 35px;
+    color: rgb(219, 219, 171);
+    text-align: top left; /* Align text to the left */
+    caret-shape:block;
+    /* caret-color:; */
+    transition: placeholder-color 0.2s ease;
+
+}
+
+#input-box:focus{
+    background-color: rgb(39, 38, 38);
+    border: 1px solid rgb(61, 61, 61);
+
+}
+
+#input-box:focus::placeholder {
+    color: transparent; /* Make placeholder text transparent on focus */
+}
+
+#input-box::placeholder {
+    font-size: 18px; /* Increase font size of placeholder */
+    color: #aaa; /* Color of the placeholder text */
+    /* Use padding to position text within the input box */
+    padding-left: 0; /* Ensure no extra space on the left */
+    padding-top: 0; /* Ensure no extra space on the top */
+    position: absolute; /* Positioning for better control */
+    top: 10px; /* Adjust to control top position */
+    left: 10px; /* Adjust to control left position */
+}
+
